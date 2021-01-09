@@ -1,0 +1,153 @@
+<!doctype html>
+<title>LPL Signup</title> 
+<html>
+<head>
+<link rel="shortcut icon" href="images.png">
+<style>
+	body{
+	padding:0px;
+	margin:0px;
+		background-image:url('cricket.jpg');
+		background-size:cover;
+		height:500px
+	}
+	.panel{
+		background-color:#fbf8f8ab;
+		margin-top:120px;
+		padding:10px;
+	}
+	input[type='submit']{
+	padding:15px;
+	background-color:green;
+	color:white;
+	border-radius:20px;
+	border:1px solid green;
+transition: background-color .1s;
+}
+	input[type='reset']{
+	padding:15px;
+	background-color:green;
+	color:white;
+	border-radius:20px;
+	border:1px solid green;
+transition: background-color .1s;
+}
+	input[type='submit']:hover{
+	padding:15px;
+	outline:none;
+	background-color:transparent;
+	color:black;
+	border-radius:0px;
+	border:1px solid white;
+}
+	input[type='reset']:hover{
+	outline:none;
+	padding:15px;
+	background-color:transparent;
+	color:black;
+	border-radius:0px;
+	border:1px solid white;
+}
+</style>
+</head>
+<body>
+<div class="panel">
+<center>
+<form action="#" name="myForm" onsubmit="my1()" method="post">
+Name:
+<input type="text" name="Name" id="1">
+<br><br>
+
+Email:
+	<input type="text" name="Email" id="2">
+<br><br>
+
+Contact no:
+	<input type="number" name="contact" id="3">
+<br><br>
+
+Password:
+	<input type="password" name="password" id="4">
+<br><br>
+
+Re-type Password:
+	<input type="password" name="password" id="5">
+<br><br>
+
+Gender:
+	<input type="radio"  id="male_gen">Male
+	<input type="radio"  id="female_gen">Female
+	<input type="radio"  id="other_gen">Other<br>
+
+Birthday:
+	<input type="date" id="bday">
+<br><br>
+
+Nationality:<br>
+	<input type="radio" id="indian">Indian<br>
+	<input type="radio" id="un_indian">Un-Indian<br>
+<br><br>
+
+<input type="submit" value="Submit">
+<input type="reset">
+</form>
+</center>
+</div>
+<script>
+function my1()
+{
+var x=document.getElementById("1").value
+if(document.getElementById("1").value == "")
+{
+	alert("Please provide your name:");
+	document.getElementById("1").focus();
+	return false;
+}
+var y=document.getElementById("2").value;
+var atpos=y.indexOf("@");
+var dotpos=y.indexOf(".");
+var dotposlast=y.lastIndexOf(".");
+if(y=="" || atpos<1 || dotpos<=atpos+2 || dotposlast+2>=y.length)
+{
+	alert("Please provide Correct Email Id");
+	document.getElementById("2").focus();
+	return false;
+}
+var a=document.getElementById("3").value;
+if(a =="" || a.length!=10 || isNaN(a))
+{
+	alert("Please provide Valid phone number");
+	document.getElementById("3").focus();
+	return false;
+}
+var b=document.getElementById("4").value
+var c=document.getElementById("5").value
+if(b=="" || b!=c)
+{
+	alert("Please enter same password")
+	document.getElementById("5").focus();
+	return false;
+}
+if(!document.getElementById("male_gen").checked && !document.getElementById("female_gen").checked && !document.getElementById("other_gen").checked)
+{
+	alert("please choose gender!!");
+	return false;
+}
+if(!document.getElementById("indian").checked || !document.getElementById("un_indian").checked)
+{
+	alert("please choose nationality!!");
+	return false;
+}
+if(document.getElementById("bday").value ==""){
+alert("Please Enter your birth date!!");
+return false;
+}
+else
+{
+	alert("successfully submitted");
+}
+}
+</script>
+
+</body>
+</html>

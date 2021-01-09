@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<title>LPL Centuries</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="shortcut icon" href="images.png">
+<style>
+<head>
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
+<link rel="shortcut icon" href="images.png">
+body{
+	background-image:url('back.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+	margin:0px;
+	padding:0px;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background-image:url("header.png");
+	background-size:cover;
+	height: 150px;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #3f51b5;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+	height:400px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #3f51b5;
+    margin-top: 20px;
+	color:white;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+.align{
+	height:340px;
+	width:33%;
+	border:1px solid black;
+	float:left;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a:.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a.hover{
+   display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+	<p></p>
+  <h1>Most Centuries</h1>
+  <p></p>
+</div>
+
+<div class="topnav">
+<ul>
+<li><a href="Webpage.html">Home</a></li>
+ 
+<a href="Final signup.html" style="float:right">Signup</a>
+</ul>
+</div>
+<div class="w3-container">
+
+<h2>Most Centuries</h2>
+<div class="w3-responsive">
+<table class="w3-table-all w3-hoverable">
+<tr class="w3-black">
+  <th>Position</th>
+  <th>Player</th>
+  <th>Matches</th>
+  <th>Innings</th>
+  <th>Not Out</th>
+  <th>Runs</th>
+  <th>Highest Score</th>
+  <th>Average</th>
+  <th>Ball Faced</th>
+  <th>Strike Rates</th>
+  <th>100</th>
+  <th>50</th>
+  <th>4s</th>
+  <th>6s</th>
+</tr>
+<tr>
+  <td>1</td>
+  <td>Chris Gayle</td>
+  <td>102</td>
+  <td>101</td>
+  <td>12</td>
+  <td>3689</td>
+  <td>175</td>
+  <td>41.44</td>
+  <td>2431</td>
+  <td>154.74</td>
+  <td>5</td>
+  <td>22</td>
+  <td>301</td>
+  <td>269</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>Virat Kohli</td>
+  <td>153</td>
+  <td>144</td>
+  <td>23</td>
+  <td>4527</td>
+  <td>113</td>
+  <td>38.65</td>
+  <td>3452</td>
+  <td>130.01</td>
+  <td>4</td>
+  <td>31</td>
+  <td>394</td>
+  <td>163</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>David Warner</td>
+  <td>114</td>
+  <td>114</td>
+  <td>15</td>
+  <td>4014</td>
+  <td>126</td>
+  <td>40.45</td>
+  <td>2824</td>
+  <td>142.13</td>
+  <td>3</td>
+  <td>34</td>
+  <td>401</td>
+  <td>160</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>AB de Villiers</td>
+  <td>133</td>
+  <td>121</td>
+  <td>27</td>
+  <td>3594</td>
+  <td>133</td>
+  <td>38.23</td>
+  <td>2425</td>
+  <td>148.20</td>
+  <td>3</td>
+  <td>23</td>
+  <td>291</td>
+  <td>166</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>Brendon McCullum</td>
+  <td>106</td>
+  <td>107</td>
+  <td>6</td>
+  <td>2801</td>
+  <td>158</td>
+  <td>27.23</td>
+  <td>2133</td>
+  <td>131.31</td>
+  <td>2</td>
+  <td>13</td>
+  <td>284</td>
+  <td>126</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>Virender Sehwag</td>
+  <td>104</td>
+  <td>104</td>
+  <td>5</td>
+  <td>2728</td>
+  <td>122</td>
+  <td>27.55</td>
+  <td>1755</td>
+  <td>155.44</td>
+  <td>2</td>
+  <td>16</td>
+  <td>334</td>
+  <td>106</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>Shane Watson</td>
+  <td>105</td>
+  <td>101</td>
+  <td>14</td>
+  <td>2691</td>
+  <td>104</td>
+  <td>30.93</td>
+  <td>1933</td>
+  <td>139.21</td>
+  <td>2</td>
+  <td>14</td>
+  <td>263</td>
+  <td>126</td>
+</tr>
+<tr>
+  <td>8</td>
+  <td>Murali Vijay</td>
+  <td>101</td>
+  <td>101</td>
+  <td>5</td>
+  <td>2523</td>
+  <td>127</td>
+  <td>26.28</td>
+  <td>2045</td>
+  <td>123.37</td>
+  <td>2</td>
+  <td>13</td>
+  <td>237</td>
+  <td>90</td>
+</tr>
+<tr>
+  <td>9</td>
+  <td>Adam Gilchrist</td>
+  <td>80</td>
+  <td>80</td>
+  <td>4</td>
+  <td>2069</td>
+  <td>109</td>
+  <td>27.22</td>
+  <td>1498</td>
+  <td>138.39</td>
+  <td>2</td>
+  <td>11</td>
+  <td>239</td>
+  <td>92</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>Hashim Amla</td>
+  <td>16</td>
+  <td>16</td>
+  <td>3</td>
+  <td>577</td>
+  <td>104</td>
+  <td>44.38</td>
+  <td>407</td>
+  <td>141.76</td>
+  <td>2</td>
+  <td>3</td>
+  <td>60</td>
+  <td>21</td>
+</tr>
+</table>
+
+<div class="footer">
+  <div style="text-align:center; font-size:29px; color:white;"><i class="fab fa-facebook"></i>&nbsp;<i class="fab fa-instagram"></i>&nbsp;<i class="fab fa-youtube"></i>&nbsp;<i class="fab fa-linkedin"></i>&nbsp;<i class="fab fa-google-plus-square"></i></div>
+<br>
+<div style="font-size:17px;text-align:center; color:white; font-family:arial;"><h4>We work hard for you...!!!<h4></div> <br>
+<div   style="text-align:center; color:white;"> &copy;2018 ,<b>Sports Association</b> </div>
+
+</div>
+<script>
+</div>
+</body>
+</html> 
